@@ -88,7 +88,7 @@
 
           <div class="form-group">
             <label for="brand_name">Nombre de Autor</label>
-            <input type="text" class="form-control" id="brand_name" name="brand_name" placeholder="Enter brand name" autocomplete="off">
+            <input type="text" class="form-control" id="brand_name" name="brand_name" placeholder="Agregue nombre del autor" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="active">Estado</label>
@@ -129,7 +129,7 @@
 
           <div class="form-group">
             <label for="edit_brand_name">Nombre de Autor</label>
-            <input type="text" class="form-control" id="edit_brand_name" name="edit_brand_name" placeholder="Enter brand name" autocomplete="off">
+            <input type="text" class="form-control" id="edit_brand_name" name="edit_brand_name" placeholder="Agregue nombre del autor" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="edit_active">Estado</label>
