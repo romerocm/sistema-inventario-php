@@ -5,11 +5,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Reports
+        Reportes
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Reports</li>
+        <li class="active">Reportes</li>
       </ol>
     </section>
 
@@ -51,7 +51,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Parking - Report</h3>
+              <h3 class="box-title">Total de pedidos - Informe</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -64,15 +64,15 @@
           <!-- /.box -->
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Paid Orders - Report Data</h3>
+              <h3 class="box-title">Total de pedidos pagados - Datos del informe</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="datatables" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Month - Year</th>
-                  <th>Amount</th>
+                  <th>Mes - Año</th>
+                  <th>Monto</th>
                 </tr>
                 </thead>
                 <tbody>

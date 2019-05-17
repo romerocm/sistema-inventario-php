@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Orders</small>
+      Gestionar
+      <small>Ordenes</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Orders</li>
+      <li class="active">Ordenes</li>
     </ol>
   </section>
 
@@ -35,20 +35,20 @@
         <?php endif; ?>
 
         <?php if(in_array('createOrder', $user_permission)): ?>
-          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary">Add Order</a>
+          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary">Agregar Orden</a>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Orders</h3>
+            <h3 class="box-title">Gestionar Ordenes</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Bill no</th>
+                <th>No. Factura</th>
                 <th>Nombre del Cliente</th>
                 <th>Telefono del Cliente</th>
                 <th>Fecha y Hora</th>
@@ -56,7 +56,7 @@
                 <th>Cantidad Total</th>
                 <th>Estado de Pago</th>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Acción</th>
                 <?php endif; ?>
               </tr>
               </thead>

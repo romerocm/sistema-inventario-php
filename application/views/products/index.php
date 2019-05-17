@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      Gestionar
+      <small>Productos</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li class="active">Productos</li>
     </ol>
   </section>
 
@@ -35,26 +35,26 @@
         <?php endif; ?>
 
         <?php if(in_array('createProduct', $user_permission)): ?>
-          <a href="<?php echo base_url('products/create') ?>" class="btn btn-primary">Add Product</a>
+          <a href="<?php echo base_url('products/create') ?>" class="btn btn-primary">Agregar Productos</a>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Products</h3>
+            <h3 class="box-title">Gestionar Productos</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Image</th>
-                <th>SKU</th>
-                <th>Product Name</th>
-                <th>Price</th>
-                <th>Qty</th>
-                <th>Store</th>
-                <th>Availability</th>
+                <th>Imagen</th>
+                <th>Numero de Referencia</th>
+                <th>Nombre de Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Tienda</th>
+                <th>Disponibilidad</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                   <th>Action</th>
                 <?php endif; ?>
@@ -84,16 +84,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Product</h4>
+        <h4 class="modal-title">Remover Producto</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('products/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>¿Realmente quieres eliminar?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Guardar Cambios</button>
         </div>
       </form>
 

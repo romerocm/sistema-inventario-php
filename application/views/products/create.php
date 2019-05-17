@@ -134,7 +134,7 @@
 
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                <a href="<?php echo base_url('products/') ?>" class="btn btn-warning">Back</a>
+                <a href="<?php echo base_url('products/') ?>" class="btn btn-warning">Regresar</a>
               </div>
             </form>
           <!-- /.box-body -->

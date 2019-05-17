@@ -5,13 +5,13 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage Attributes
-      <small>Value</small>
+      Gestionar Atributo
+      <small>Valor</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active"><a href="<?php echo base_url('attributes/') ?>">Attributes</a></li>
-      <li class="active">Attributes Value</li>
+      <li class="active"><a href="<?php echo base_url('attributes/') ?>">Atributos</a></li>
+      <li class="active">Valor de Atributo</li>
     </ol>
   </section>
 
@@ -42,23 +42,23 @@
         <?php endif; ?>
 
         <?php //if(in_array('createGroup', $user_permission)): ?>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Value</button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Agregar Valor</button>
           <br /> <br />
         <?php //endif; ?>
 
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Attributes Value</h3>
+            <h3 class="box-title">Gestionar valor de Atributo</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Attribute Value</th>
+                <th>Valor de Atributo</th>
                 <?php //if(in_array('updateGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Acción</th>
                 <?php //endif; ?>
               </tr>
               </thead>
@@ -86,22 +86,22 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Attribute Value</h4>
+        <h4 class="modal-title">Agregar valor de Atributo</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/createValue') ?>" method="post" id="createForm">
 
         <div class="modal-body">
           <div class="form-group">
-            <label for="brand_name">Attribute Value</label>
+            <label for="brand_name">Valor de Atributo</label>
             <input type="text" class="form-control" id="attribute_value_name" name="attribute_value_name" placeholder="Enter attribute value" autocomplete="off">
           </div>
         </div>
 
         <div class="modal-footer">
           <input type="hidden" name="attribute_parent_id" id="attribute_parent_id" value="<?php echo $attribute_data['id']; ?>">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Guardar Cambios</button>
         </div>
 
       </form>
@@ -117,7 +117,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit Attribute Value</h4>
+        <h4 class="modal-title">Editar valor de Atributo</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/updateValue') ?>" method="post" id="updateForm">
@@ -126,15 +126,15 @@
           <div id="messages"></div>
 
           <div class="form-group">
-            <label for="edit_brand_name">Attribute Value</label>
+            <label for="edit_brand_name">Valor de Atributo</label>
             <input type="text" class="form-control" id="edit_attribute_value_name" name="edit_attribute_value_name" placeholder="Enter attribute value" autocomplete="off">
           </div>
         </div>
 
         <div class="modal-footer">
           <input type="hidden" name="attribute_parent_id" id="attribute_parent_id" value="<?php echo $attribute_data['id']; ?>">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Guardar Cambios</button>
         </div>
 
       </form>
@@ -150,16 +150,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Attribute Value</h4>
+        <h4 class="modal-title">Remover valor de Atributo</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/removeValue') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>¿Realmente quieres eliminar?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Guardar Cambios</button>
         </div>
       </form>
 
