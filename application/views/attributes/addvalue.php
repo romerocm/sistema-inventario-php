@@ -23,7 +23,7 @@
 
         <div class="box">
           <div class="box-body">
-            <h4>Attribute name: <?php echo $attribute_data['name']; ?></h4>
+            <h4>Nombre de Atributo: <?php echo $attribute_data['name']; ?></h4>
           </div>
         </div>
 
