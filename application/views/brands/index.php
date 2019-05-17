@@ -6,11 +6,11 @@
   <section class="content-header">
     <h1>
       Gestionar
-      <small>Marcas</small>
+      <small>Autor</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Marcas</li>
+      <li class="active">Autor</li>
     </ol>
   </section>
 
@@ -35,20 +35,20 @@
         <?php endif; ?>
 
         <?php if(in_array('createBrand', $user_permission)): ?>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#addBrandModal">Add Brand</button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#addBrandModal">Agregar Autor</button>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Gestionar Marcas</h3>
+            <h3 class="box-title">Gestionar Autor</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Nombre de Marca</th>
+                <th>Nombre de Autor</th>
                 <th>Estado</th>
                 <?php if(in_array('updateBrand', $user_permission) || in_array('deleteBrand', $user_permission)): ?>
                   <th>Acción</th>
@@ -79,7 +79,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Agregar Marca</h4>
+        <h4 class="modal-title">Agregar Autor</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('brands/create') ?>" method="post" id="createBrandForm">
@@ -87,7 +87,7 @@
         <div class="modal-body">
 
           <div class="form-group">
-            <label for="brand_name">Nombre de Marca</label>
+            <label for="brand_name">Nombre de Autor</label>
             <input type="text" class="form-control" id="brand_name" name="brand_name" placeholder="Enter brand name" autocomplete="off">
           </div>
           <div class="form-group">
@@ -119,7 +119,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Editar Marca</h4>
+        <h4 class="modal-title">Editar Autor</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('brands/update') ?>" method="post" id="updateBrandForm">
@@ -128,7 +128,7 @@
           <div id="messages"></div>
 
           <div class="form-group">
-            <label for="edit_brand_name">Nombre de Marca</label>
+            <label for="edit_brand_name">Nombre de Autor</label>
             <input type="text" class="form-control" id="edit_brand_name" name="edit_brand_name" placeholder="Enter brand name" autocomplete="off">
           </div>
           <div class="form-group">
@@ -160,7 +160,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remover Marca</h4>
+        <h4 class="modal-title">Remover Autor</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('brands/remove') ?>" method="post" id="removeBrandForm">

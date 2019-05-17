@@ -74,7 +74,7 @@
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteGroup" class="minimal"></td>
                       </tr>
                       <tr>
-                        <td>Marcas</td>
+                        <td>Autor</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createBrand" class="minimal"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateBrand" class="minimal"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewBrand" class="minimal"></td>

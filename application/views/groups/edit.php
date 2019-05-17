@@ -107,7 +107,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Marcas</td>
+                        <td>Autor</td>
                         <td><input type="checkbox" name="permission[]" id="permission" class="minimal" value="createBrand" <?php if($serialize_permission) {
                           if(in_array('createBrand', $serialize_permission)) { echo "checked"; } 
                         } ?>></td>

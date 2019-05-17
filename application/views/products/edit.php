@@ -102,7 +102,7 @@
                 <?php endif; ?>
 
                 <div class="form-group">
-                  <label for="brands">Marcas</label>
+                  <label for="brands">Autor</label>
                   <?php $brand_data = json_decode($product_data['brand_id']); ?>
                   <select class="form-control select_group" id="brands" name="brands[]" multiple="multiple">
                     <?php foreach ($brands as $k => $v): ?>
