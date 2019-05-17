@@ -138,7 +138,7 @@ class Attributes extends Admin_Controller
 	        	$update = $this->model_attributes->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Succesfully updated';
+	        		$response['messages'] = 'Actualizado de forma Exitosa';
 	        	}
 	        	else {
 	        		$response['success'] = false;
