@@ -45,7 +45,7 @@ class Users extends Admin_Controller
 		}
 
 		$this->form_validation->set_rules('groups', 'Group', 'required');
-		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]|is_unique[users.username]');
+		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[20]|is_unique[users.username]');
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|is_unique[users.email]');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]');
 		$this->form_validation->set_rules('cpassword', 'Confirm password', 'trim|required|matches[password]');
@@ -101,7 +101,7 @@ class Users extends Admin_Controller
 
 		if($id) {
 			$this->form_validation->set_rules('groups', 'Group', 'required');
-			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]');
+			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[20]');
 			$this->form_validation->set_rules('email', 'Email', 'trim|required');
 			$this->form_validation->set_rules('fname', 'First name', 'trim|required');
 
@@ -240,7 +240,7 @@ class Users extends Admin_Controller
 		$id = $this->session->userdata('id');
 
 		if($id) {
-			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]');
+			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[20]');
 			$this->form_validation->set_rules('email', 'Email', 'trim|required');
 			$this->form_validation->set_rules('fname', 'First name', 'trim|required');
 
