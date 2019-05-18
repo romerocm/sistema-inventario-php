@@ -88,7 +88,7 @@
 
           <div class="form-group">
             <label for="brand_name">Nombre de Tienda</label>
-            <input type="text" class="form-control" id="store_name" name="store_name" placeholder="Enter store name" autocomplete="off">
+            <input type="text" class="form-control" id="store_name" name="store_name" placeholder="Ingrese el nombre de la tienda" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="active">Estado</label>
@@ -129,7 +129,7 @@
 
           <div class="form-group">
             <label for="edit_brand_name">Nombre de Tienda</label>
-            <input type="text" class="form-control" id="edit_store_name" name="edit_store_name" placeholder="Enter store name" autocomplete="off">
+            <input type="text" class="form-control" id="edit_store_name" name="edit_store_name" placeholder="Ingrese el nombre de la tienda" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="edit_active">Estado</label>
