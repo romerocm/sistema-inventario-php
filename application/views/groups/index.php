@@ -46,9 +46,9 @@
               <table id="groupTable" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Group Name</th>
+                  <th>Nombre de Grupo</th>
                   <?php if(in_array('updateGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
-                    <th>Action</th>
+                    <th>Accción</th>
                   <?php endif; ?>
                 </tr>
                 </thead>

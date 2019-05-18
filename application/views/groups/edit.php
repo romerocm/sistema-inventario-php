@@ -44,7 +44,7 @@
 
                 <div class="form-group">
                   <label for="group_name">Nombre del Grupo</label>
-                  <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Enter group name" value="<?php echo $group_data['group_name']; ?>">
+                  <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Ingrese el nombre del grupo" value="<?php echo $group_data['group_name']; ?>">
                 </div>
                 <div class="form-group">
                   <label for="permission">Permission</label>

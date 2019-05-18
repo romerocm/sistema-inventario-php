@@ -107,7 +107,7 @@ class Category extends Admin_Controller
         	$create = $this->model_category->create($data);
         	if($create == true) {
         		$response['success'] = true;
-        		$response['messages'] = 'Succesfully created';
+        		$response['messages'] = 'Creación exitosa';
         	}
         	else {
         		$response['success'] = false;
@@ -153,7 +153,7 @@ class Category extends Admin_Controller
 	        	$update = $this->model_category->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Succesfully updated';
+	        		$response['messages'] = 'Actualización exitosa';
 	        	}
 	        	else {
 	        		$response['success'] = false;

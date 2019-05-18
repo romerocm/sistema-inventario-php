@@ -102,7 +102,7 @@ class Stores extends Admin_Controller
         	$create = $this->model_stores->create($data);
         	if($create == true) {
         		$response['success'] = true;
-        		$response['messages'] = 'Succesfully created';
+        		$response['messages'] = 'Creación exitosa';
         	}
         	else {
         		$response['success'] = false;
@@ -147,7 +147,7 @@ class Stores extends Admin_Controller
 	        	$update = $this->model_stores->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Succesfully updated';
+	        		$response['messages'] = 'Actualización exitosa';
 	        	}
 	        	else {
 	        		$response['success'] = false;
