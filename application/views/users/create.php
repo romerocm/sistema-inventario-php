@@ -63,27 +63,27 @@
 
                 <div class="form-group">
                   <label for="password">Contraseña</label>
-                  <input type="text" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off">
+                  <input type="text" class="form-control" id="password" name="password" placeholder="Contraseña" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                   <label for="cpassword">Confirmar contraseña</label>
-                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password" autocomplete="off">
+                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirmar Contraseña" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                   <label for="fname">Nombre</label>
-                  <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" autocomplete="off">
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="Nombre" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                   <label for="lname">Apellido</label>
-                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" autocomplete="off">
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Apellido" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                   <label for="phone">Telefono</label>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" autocomplete="off">
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono" autocomplete="off">
                 </div>
 
                 <div class="form-group">
